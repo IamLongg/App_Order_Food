@@ -66,7 +66,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         });
         DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, 0 , 1 );
+                this, drawer, toolbar, 0 , 0 );
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -98,18 +98,18 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
         adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.menu_item,MenuViewHolder.class, category) {
             @Override
-            protected void populateViewHolder(MenuViewHolder viewHolder, Category model, int i) {
+            protected void populateViewHolder(MenuViewHolder viewHolder, Category model, int position) {
                 viewHolder.txtMenuName.setText(model.getName());
                 Picasso.with(getBaseContext()).load(model.getImage())
                         .into(viewHolder.imageView);
-                Category clickItem = model;
+               final Category clickItem = model;
                 viewHolder.setItemClickListener( new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
                        //Get CategoryId and send to new Activity
                         Intent foodList =  new Intent(Home.this, FoodList.class);
                         // because CategoryId is key, so we just get key of this item
-                        foodList.putExtra("CategoryId", adapter.getRef(position).getKey());
+                        foodList.putExtra("categoryId", adapter.getRef(position).getKey());
                         startActivity(foodList);
                     }
                 });

@@ -19,6 +19,15 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="CollapsedAppbar" parent="TextAppearance.AppCompat.Medium">
+        <item name="textSize">24sp</item>
+        <item name="textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="ExpandedAppbar" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+    </style>
     <style name="Theme.App_Order_Food.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.App_Order_Food.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

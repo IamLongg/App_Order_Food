@@ -1,6 +1,8 @@
 package com.example.app_order_food;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -41,7 +43,7 @@ public class FoodList extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         if(getIntent() != null)
-            categoryId = getIntent().getStringExtra("CategoryId");
+            categoryId = getIntent().getStringExtra("categoryId");
         if(!categoryId.isEmpty() && categoryId!= null)
         {
             loadListFood(categoryId);
@@ -59,11 +61,15 @@ public class FoodList extends AppCompatActivity {
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-                        Toast.makeText(FoodList.this, "" +local.getName(),Toast.LENGTH_SHORT).show();
+                        //Start new activity
+                        Intent foodDetail = new Intent(FoodList.this,FoodDetail.class);
+                        foodDetail.putExtra("FoodId",adapter.getRef(position).getKey());
+                        startActivity(foodDetail);
                     }
                 });
             }
         };
+        Log.d("TAG",""+adapter.getItemCount());
         recyclerView.setAdapter(adapter);
     }
 }

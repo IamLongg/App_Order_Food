@@ -1,17 +1,19 @@
 package com.example.app_order_food.Model;
 
 public class Food {
-    private String Name, Image, Description, Discount, MenuId;
+
+    private String Name, Image, Description, Discount, MenuId,Price;
 
     public Food() {
     }
 
-    public Food(String name, String image, String description, String discount, String menuId) {
+    public Food(String name, String image, String description, String discount, String menuId,String price) {
         Name = name;
         Image = image;
         Description = description;
         Discount = discount;
         MenuId = menuId;
+        Price = price;
     }
 
     public String getName() {
@@ -52,5 +54,13 @@ public class Food {
 
     public void setMenuId(String menuId) {
         MenuId = menuId;
+    }
+
+    public String getPrice() {
+        return Price;
+    }
+
+    public void setPrice(String price) {
+        Price = price;
     }
 }
