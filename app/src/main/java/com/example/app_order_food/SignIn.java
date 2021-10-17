@@ -1,8 +1,5 @@
 package com.example.app_order_food;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.app_order_food.Common.Common;
 import com.example.app_order_food.Model.User;
@@ -53,6 +53,7 @@ public class SignIn extends AppCompatActivity {
 
                             mDialog.dismiss();
                             User user = snapshot.child(edtPhone.getText().toString()).getValue(User.class);
+                            user.setPhone(edtPhone.getText().toString());
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
                                 {
                                     Intent homeIntent = new Intent(SignIn.this, Home.class);

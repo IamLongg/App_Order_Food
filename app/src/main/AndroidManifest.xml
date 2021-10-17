@@ -11,8 +11,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        tools:replace="android:theme"
-        android:theme="@style/Theme.App_Order_Food">
+        android:theme="@style/Theme.App_Order_Food"
+        tools:replace="android:theme">
+        <activity
+            android:name=".Cart"
+            android:exported="true" />
         <activity
             android:name=".FoodDetail"
             android:exported="true" />
