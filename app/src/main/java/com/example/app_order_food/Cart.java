@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -100,7 +101,8 @@ public class Cart extends AppCompatActivity {
                         .setValue(request);
                 //Delete Cart
                 new Database(getBaseContext()).clearCart();
-//                Toast.makeText(Cart.this, "Thank you", "OrderPlace", Toast.LENGTH_SHORT).show();
+ //               Toast.makeText(Cart.this, "Thank you", "OrderPlace", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Cart.this, "Bạn đã order thành công", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });
