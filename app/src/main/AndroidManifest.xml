@@ -14,6 +14,9 @@
         android:theme="@style/Theme.App_Order_Food"
         tools:replace="android:theme">
         <activity
+            android:name=".OrderStatus"
+            android:exported="true" />
+        <activity
             android:name=".Cart"
             android:exported="true" />
         <activity

@@ -49,15 +49,15 @@
 
             <Button
                 android:id="@+id/btnPlaceOrder"
-                android:text="Place Order"
-                android:background="@color/btnActive"
-                android:textColor="@color/white"
-                app:backgroundTint="@null"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_alignParentBottom="true"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/btnActive"
+                android:text="Place Order"
+                android:textColor="#1B5E20"
+                app:backgroundTint="@null" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

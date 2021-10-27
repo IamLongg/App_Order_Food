@@ -9,8 +9,10 @@
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/activity_cart.xml" value="0.1953125" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/activity_food_detail.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/activity_foodlish.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/activity_foodlist.xml" value="0.20108695652173914" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/activity_home.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/activity_order_status.xml" value="0.19157608695652173" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/activity_sign_in.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/app_bar_home.xml" value="0.1" />
@@ -22,6 +24,7 @@
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/menu_item.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/nav_header_home.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/layout/order_layout.xml" value="0.25" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/App_Order_Food/app/src/main/res/menu/home.xml" value="0.18" />
       </map>
