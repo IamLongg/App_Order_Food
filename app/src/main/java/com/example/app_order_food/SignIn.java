@@ -63,12 +63,12 @@ public class SignIn extends AppCompatActivity {
                                 }
 
                             } else {
-                                Toast.makeText(SignIn.this, "SignIn false !!!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignIn.this, "Đăng nhập thất bại !!!", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else
                         {
-                            Toast.makeText(SignIn.this, "User not exists in Database", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignIn.this, "Tài khoản hoặc mật khẩu không đúng", Toast.LENGTH_SHORT).show();
                         }
                     }
 

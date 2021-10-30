@@ -32,7 +32,7 @@
 
                 <TextView
                     android:textSize="20sp"
-                    android:text="Total:"
+                    android:text="Tổng:"
                     android:textColor="@android:color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -55,7 +55,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:background="@color/btnActive"
-                android:text="Place Order"
+                android:text="Đặt hàng"
                 android:textColor="#1B5E20"
                 app:backgroundTint="@null" />
         </RelativeLayout>

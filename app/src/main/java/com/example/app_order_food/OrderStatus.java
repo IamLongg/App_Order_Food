@@ -29,7 +29,7 @@ public class OrderStatus extends AppCompatActivity {
 
         //firebase
         database = FirebaseDatabase.getInstance();
-        requests = database.getReference("Requests");
+        requests = database.getReference("Request");
 
         recyclerView = (RecyclerView) findViewById(R.id.listOrders);
         recyclerView.setHasFixedSize(true);
