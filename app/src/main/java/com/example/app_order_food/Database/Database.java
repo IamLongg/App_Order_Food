@@ -61,4 +61,8 @@ public class Database extends SQLiteAssetHelper {
         String query = String.format("DELETE FROM OrderDetail");
         db.execSQL(query);
     }
+    public void deleteByID(String id) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("DELETE FROM OrderDetail where ProductId = ?", new String[]{(id)});
+    }
 }

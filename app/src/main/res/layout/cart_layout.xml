@@ -49,6 +49,13 @@
             android:id="@+id/cart_item_count"
             android:layout_width="20dp"
             android:layout_height="20dp"/>
+        <ImageView
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:id="@+id/cart_item_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
 
     </LinearLayout>
 
