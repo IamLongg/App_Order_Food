@@ -3,6 +3,7 @@ package com.example.app_order_food;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,6 +42,21 @@ public class SignIn extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+                String phone = edtPhone.getText().toString().trim();
+                String password = edtPassword.getText().toString().trim();
+
+                if (TextUtils.isEmpty( phone )){
+                    edtPhone.setError( "Vui lòng nhập số điện thoại" );
+                    return;
+                }
+
+                if (TextUtils.isEmpty( password )){
+                    edtPassword.setError( "Mật khẩu không được để trống" );
+                    return;
+                }
+
                 final ProgressDialog mDialog = new ProgressDialog(SignIn.this);
                 mDialog.setMessage("Please waiting...");
                 mDialog.show();

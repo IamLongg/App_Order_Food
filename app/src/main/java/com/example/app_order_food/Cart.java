@@ -2,6 +2,7 @@ package com.example.app_order_food;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -88,6 +89,13 @@ public class Cart extends AppCompatActivity {
         alertDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
+
+                String address = edtAddress.getText( ).toString().trim();
+                if (TextUtils.isEmpty( address )){
+                    Toast.makeText(Cart.this, "Vui lòng nhập địa chỉ", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 Request request = new Request(
                         Common.currentUser.getPhone(),
                         Common.currentUser.getName(),

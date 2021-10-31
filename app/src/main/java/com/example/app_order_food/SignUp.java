@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,6 +41,30 @@ public class SignUp extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String phone = edtPhone.getText().toString().trim();
+                String name = edtName.getText().toString().trim();
+                String password = edtPassword.getText().toString().trim();
+
+                if (TextUtils.isEmpty( phone )){
+                    edtPhone.setError( "Số điện thoại không được để trống" );
+                    return;
+                }
+
+                if (TextUtils.isEmpty( name )){
+                    edtName.setError( "Họ và tên không được để trống" );
+                    return;
+                }
+
+                if (TextUtils.isEmpty( password )){
+                    edtPassword.setError( "Mật khẩu không được để trống" );
+                    return;
+                }
+                if (edtPassword.length() < 6 ){
+                    edtPassword.setError( "Mật khẩu phải có ít nhất 6 kí tự" );
+                    return;
+                }
+
+
                 final ProgressDialog mDialog = new ProgressDialog(SignUp.this);
                 mDialog.setMessage("Please waiting...");
                 mDialog.show();

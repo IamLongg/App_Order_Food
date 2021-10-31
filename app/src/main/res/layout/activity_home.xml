@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/img"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
@@ -24,6 +24,6 @@
         app:headerLayout="@layout/nav_header_home"
         app:itemTextColor="@color/white"
         app:itemIconTint="@color/white"
-        android:background="@drawable/background"
+        android:background="@drawable/img4"
         app:menu="@menu/activity_main_drawer" />
 </androidx.drawerlayout.widget.DrawerLayout>
