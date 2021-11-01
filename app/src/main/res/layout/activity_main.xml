@@ -21,7 +21,9 @@
         <TextView
             android:gravity="center"
             android:id="@+id/txtSlogan"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="italic|bold"
             android:text="@string/slogan"
             android:layout_width="150dp"
             android:layout_height="wrap_content"/>
@@ -35,38 +37,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-<!--        <Button-->
-<!--            android:id="@+id/btnSignUp"-->
-<!--            android:text="Sign Up"-->
-<!--            android:textColor="@android:color/white"-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_margin="8dp"-->
-<!--            app:buttonColor="@color/btnSignUp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:shadowColor="@android:color/black"-->
-<!--            app:shadowEnabled="true"-->
-<!--            app:shadowHeight="5dp"-->
-<!--            app:cornerRadius="4dp"/>-->
-
-<!--        <Button-->
-<!--            android:id="@+id/btnSignIn"-->
-<!--            android:text="Sign In"-->
-<!--            android:textColor="@android:color/white"-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_margin="8dp"-->
-<!--            app:buttonColor="@color/btnActive"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:shadowColor="@android:color/black"-->
-<!--            app:shadowEnabled="true"-->
-<!--            app:shadowHeight="5dp"-->
-<!--            app:cornerRadius="4dp"/>-->
-
-
         <Button
             android:id="@+id/btnSignUp"
-            android:text="Sign Up"
+            android:text="Đăng Ký"
             android:layout_margin="8dp"
             android:textColor="@color/white"
             android:background="@color/btnSignUp"
@@ -78,7 +51,7 @@
 
         <Button
             android:id="@+id/btnSignIn"
-            android:text="Sign In"
+            android:text="Đăng Nhập"
             android:layout_margin="8dp"
             android:background="@color/btnSignUp"
             android:textColor="@color/white"

@@ -14,19 +14,19 @@
             android:id="@+id/nav_cart"
             android:icon="@drawable/ic_baseline_shopping_cart_24"
             android:iconTint="@android:color/black"
-            android:title="Cart" />
+            android:title="Giỏ Hàng" />
 
         <item
             android:id="@+id/nav_orders"
             android:icon="@drawable/ic_baseline_access_time_24"
             android:iconTint="@android:color/black"
-            android:title="Orders" />
+            android:title="Đơn Đặt Hàng" />
 
         <item
             android:id="@+id/log_out"
             android:icon="@drawable/ic_baseline_exit_to_app_24"
             android:iconTint="@android:color/black"
-            android:title="Sign Out" />
+            android:title="Đăng Xuất" />
 
     </group>
 </menu>

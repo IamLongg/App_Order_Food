@@ -61,9 +61,9 @@ public class OrderStatus extends AppCompatActivity {
 
     private String convertCodeToStatus(String status) {
         if(status.equals("0"))
-            return "Placed";
+            return "đặt hàng thành công";
         else if (status.equals("1"))
-            return "On my way";
+            return "Đang giao";
         else
             return "Shipped";
     }

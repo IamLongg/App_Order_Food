@@ -51,8 +51,6 @@
     </LinearLayout>
 
 
-
-
     <Button
         android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
@@ -61,8 +59,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:background="@color/btnActive"
-        android:text="Sign In"
-        android:textColor="#1B5E20"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Đăng Nhập"
+        android:textColor="#090909"
         app:backgroundTint="@null" />
 
 </RelativeLayout>
